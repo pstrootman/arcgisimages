@@ -3,56 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>arcgisimages - ArcGIS StoryMaps Resources</title>
-    <base href="https://yourusername.github.io/arcgisimages/">
-    <!-- Replace 'yourusername' with your actual GitHub username when you upload -->
+    <title>My GitHub Projects</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            color: #333;
         }
         h1 {
-            color: #2a7ae2;
+            color: #0366d6;
+            border-bottom: 2px solid #eaecef;
+            padding-bottom: 10px;
         }
-        .resources-list {
-            margin-top: 20px;
+        .project-card {
+            background-color: #f6f8fa;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
-        .resources-list a {
-            display: block;
-            margin-bottom: 10px;
-            color: #2a7ae2;
+        .project-card h2 {
+            margin-top: 0;
+            color: #24292e;
+        }
+        .project-card p {
+            color: #586069;
+        }
+        .button {
+            display: inline-block;
+            background-color: #0366d6;
+            color: white;
+            padding: 10px 16px;
             text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s;
         }
-        .resources-list a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #666;
+        .button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <h1>arcgisimages - ArcGIS StoryMaps Resources</h1>
-    <p>A collection of resources for embedding in ArcGIS StoryMaps.</p>
+    <h1>My GitHub Projects</h1>
     
-    <div class="resources-list">
-        <h2>Interactive Elements</h2>
-        <a href="SolarSystem.html">Solar System Interactive</a>
-        <!-- More items will appear here as you add them -->
+    <div class="project-card">
+        <h2>Interactive Solar System</h2>
+        <p>Explore an interactive 3D model of our solar system, with relative planet sizes and orbits. Built with Three.js.</p>
+        <a href="SolarSystem.html" class="button">Launch Solar System</a>
     </div>
     
-    <div class="resources-list">
-        <h2>Images</h2>
-        <!-- Images will appear here as you add them -->
-    </div>
+    <!-- You can add more project cards here in the future -->
     
-    <footer>
-        <p>Created for embedding resources in ArcGIS StoryMaps | Repository: <a href="https://github.com/yourusername/arcgisimages">arcgisimages</a></p>
-    </footer>
 </body>
 </html>
