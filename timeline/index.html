@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Timeline (1800-2000)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="timeline-container">
+        <div class="timeline-header">
+            <button id="scroll-left">&lt; Scroll Left</button>
+            <h2>Timeline: 1800 - 2000</h2>
+            <button id="scroll-right">Scroll Right &gt;</button>
+        </div>
+        <div class="timeline-wrapper">
+            <div class="timeline" id="timeline">
+                </div>
+        </div>
+    </div>
+
+    <div class="event-form-container">
+        <h3>Add New Event</h3>
+        <label for="event-year">Year:</label>
+        <input type="number" id="event-year" min="1800" max="2000" placeholder="e.g., 1850">
+
+        <label for="event-decade">Decade (auto-calculated if year is filled):</label>
+        <select id="event-decade">
+            </select>
+
+        <label for="event-title">Event Title:</label>
+        <input type="text" id="event-title" placeholder="e.g., Major Discovery">
+
+        <label for="event-description">Description:</label>
+        <textarea id="event-description" placeholder="Details about the event..."></textarea>
+
+        <label for="event-image-url">Image URL:</label>
+        <input type="url" id="event-image-url" placeholder="https://example.com/image.jpg">
+
+        <button id="add-event-button">Add Event</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
